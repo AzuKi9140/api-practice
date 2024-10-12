@@ -6,11 +6,14 @@ name = "pypi"
 [packages]
 mip = "*"
 pandas = "*"
+flask = "*"
 
 [dev-packages]
 
 [scripts]
 problem = "python -m scripts.problem"
+flask = "flask --app flask_app/flaskr --debug run --host 127.0.0.1"
+curl_post = "curl -X POST http://127.0.0.1:5000/api/ -F students=@resource/students.csv -F cars=@resource/cars.csv -o resource/solution.csv"
 
 [requires]
 python_version = "3.10"
