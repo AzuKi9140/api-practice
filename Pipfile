@@ -1,0 +1,16 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+mip = "*"
+pandas = "*"
+
+[dev-packages]
+
+[scripts]
+problem = "python -m scripts.problem"
+
+[requires]
+python_version = "3.10"
